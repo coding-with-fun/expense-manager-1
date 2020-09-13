@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @import './App.scss';
+@import './components/Balance.scss';
+@import './components/History.scss';
+@import './components/NewTransaction.scss';
 
 * {
 	box-sizing: border-box;
@@ -12,8 +15,8 @@ body {
 	background-color: #f7f7f7;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	// align-items: center;
+	// justify-content: center;
 	min-height: 100vh;
 	width: 100%;
 	font-family: 'Poppins', sans-serif;

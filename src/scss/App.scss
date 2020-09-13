@@ -1,3 +1,16 @@
 .container {
+	width: 350px;
 	margin: 30px auto;
+
+	.container__title {
+		font-weight: 500;
+		font-size: x-large;
+		padding-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.container {
+		width: 90vw;
+	}
 }
