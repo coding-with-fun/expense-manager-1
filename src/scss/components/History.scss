@@ -36,22 +36,6 @@
 			.heading-closed {
 				transition: 1s ease;
 				transform: rotateZ(180deg);
-
-				animation-name: spin-icon;
-				animation-duration: 2000ms;
-				animation-iteration-count: infinite;
-				animation-delay: 2000ms;
-				animation-timing-function: ease-in-out;
-			}
-		}
-
-		@keyframes spin-icon {
-			0% {
-				transform: rotateZ(0deg);
-			}
-			20%,
-			100% {
-				transform: rotateZ(360deg);
 			}
 		}
 	}
