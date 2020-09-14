@@ -4,25 +4,15 @@ function NewTransaction({ toggle, visibility }) {
 	return (
 		<div className='new_transaction'>
 			<div className='new_transaction__mode'>
-				<label htmlFor='income' className='mode__label'>
-					<input
-						type='radio'
-						name='income'
-						id='income'
-						className='mode__label_input'
-					/>
-					<div className='mode__label_radio'></div>
-					Income
+				<label className='mode__label'>
+					<input type='radio' name='transaction' id='income' />
+					<span></span>
+					<p>Income</p>
 				</label>
-				<label htmlFor='expense' className='mode__label'>
-					<input
-						type='radio'
-						name='expense'
-						id='expense'
-						className='mode__label_input'
-					/>
-					<div className='mode__label_radio'></div>
-					Expense
+				<label className='mode__label'>
+					<input type='radio' name='transaction' id='expense' />
+					<span></span>
+					<p>Expense</p>
 				</label>
 			</div>
 		</div>
