@@ -5,14 +5,14 @@ import History from './History';
 
 function Body() {
 	return (
-		<div className='body container'>
+		<main className='container my-5 py-5' role='main'>
 			<div className='app__header'>
 				<h1>Expense Tracker</h1>
 			</div>
 			<Balance />
 			<NewTransaction />
 			<History />
-		</div>
+		</main>
 	);
 }
 
