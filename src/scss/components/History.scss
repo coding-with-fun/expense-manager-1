@@ -36,6 +36,22 @@
 			.heading-closed {
 				transition: 1s ease;
 				transform: rotateZ(180deg);
+
+				animation-name: spin-icon;
+				animation-duration: 2000ms;
+				animation-iteration-count: infinite;
+				animation-delay: 2000ms;
+				animation-timing-function: ease-in-out;
+			}
+		}
+
+		@keyframes spin-icon {
+			0% {
+				transform: rotateZ(0deg);
+			}
+			20%,
+			100% {
+				transform: rotateZ(360deg);
 			}
 		}
 	}
@@ -54,32 +70,37 @@
 			.data {
 				display: flex;
 				justify-content: space-between;
-				width: 100%;
 				padding: 10px 8px;
 				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 				margin: 10px 0;
-				transform: scaleX(1%);
 				border-right: 5px solid red;
+				transition: width 1s;
+
+				width: 100%;
 			}
 
 			.close-btn {
+				display: flex;
+				justify-content: center;
+				font-size: large;
+				background-color: red;
+				color: white;
+				transition: opacity 1s, width 1s;
+				padding: 10px 0;
+
 				opacity: 0;
-				max-width: 0;
+				width: 0;
 			}
 		}
 
 		.history__transaction:hover {
 			.data {
 				width: 90%;
-				transition: width 1s;
 			}
 
 			.close-btn {
 				opacity: 1;
 				width: 10%;
-				display: flex;
-				justify-content: center;
-				transition: width 1s;
 			}
 		}
 	}
