@@ -3,7 +3,7 @@ import React from 'react';
 function NewTransaction() {
 	return (
 		<div className='new_transaction'>
-			<h1>New Transaction</h1>
+			<h4>New Transaction</h4>
 		</div>
 	);
 }

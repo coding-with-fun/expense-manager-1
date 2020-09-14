@@ -1,23 +1,19 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Balance from './components/Balance';
-import NewTransaction from './components/NewTransaction';
-import History from './components/History';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Body from './components/Body';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 function App() {
 	return (
 		<div className='App'>
-			<Navbar />
-			<div className='container'>
-				<div className='app__header'>
-					<h1>Expense Tracker</h1>
-				</div>
-				<Balance />
-				<NewTransaction />
-				<History />
-			</div>
-			<Footer />
+			<Router>
+				<Navbar />
+				<Switch>
+					<Route exact path='/' component={Body} />
+				</Switch>
+				<Footer />
+			</Router>
 		</div>
 	);
 }

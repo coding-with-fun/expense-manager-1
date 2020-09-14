@@ -2,8 +2,8 @@ import React from 'react';
 
 function Footer() {
 	return (
-		<div className='footer'>
-			<h1>Footer</h1>
+		<div className='navbar navbar-dark bg-dark fixed-bottom footer'>
+			<h4>Footer</h4>
 		</div>
 	);
 }

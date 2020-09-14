@@ -1,5 +1,15 @@
 .App {
 	height: 100vh;
 	width: 100%;
-	background-color: beige;
+
+	background-color: #2b3137;
+	color: #ffffff;
+
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.App::-webkit-scrollbar {
+	display: none;
 }
